@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaClock } from 'react-icons/fa';
 
 const Clock = ({ timezone }) => {
   const [time, setTime] = useState(new Date());
@@ -13,7 +14,7 @@ const Clock = ({ timezone }) => {
 
   return (
     <div className="clock">
-      <h2>Current Time ({timezone}):</h2>
+      <h2><FaClock />Current Time ({timezone}):</h2>
       <p>{time.toLocaleTimeString('en-US', { timeZone: timezone })}</p>
     </div>
   );

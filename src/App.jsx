@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Map from './components/Map';
 import Clock from './components/Clock';
 import TimezoneSelect from './components/TimezoneSelect';
+import { FaGlobe, FaClock } from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -9,10 +10,16 @@ function App() {
 
   return (
    <div className="app">
-    <h1>World Clock App</h1>
-    <Map /> 
-    <TimezoneSelect onSelect={setTimezone} />
-    <Clock timezone={timezone} />
+    <header className="header">
+      <h1><FaGlobe />World Clock App</h1>
+    </header>
+    <main className="main">
+      <Map /> 
+      <div className="controls">
+        <TimezoneSelect onSelect={setTimezone} />
+        <Clock timezone={timezone} />
+      </div>
+    </main>
    </div>
   );
 }

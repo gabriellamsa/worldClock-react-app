@@ -1,0 +1,14 @@
+.geography{
+  fill: #87CEEB;
+  outline: none;
+}
+
+.geography:hover{
+  fill: #6495ED;
+  outline: none;
+}
+
+.geography:active{
+  fill: #4682B4;
+  outline: none;
+}

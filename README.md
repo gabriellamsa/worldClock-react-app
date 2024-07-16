@@ -4,7 +4,7 @@
 
 ### Updates:
 The application is being developed using the following packages: 
-react-dom react-simple-maps world-atlas 
+react-dom react-simple-maps world-atlas react-icons
 
 
 -------------------------

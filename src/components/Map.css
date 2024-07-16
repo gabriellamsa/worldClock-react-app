@@ -1,14 +1,29 @@
-.geography{
+.geography {
   fill: #87CEEB;
   outline: none;
+  transition: fill 0.3s;
 }
 
-.geography:hover{
+.geography:hover {
   fill: #6495ED;
   outline: none;
 }
 
-.geography:active{
-  fill: #4682B4;
-  outline: none;
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  pointer-events: none;
+  font-size: 14px;
 }

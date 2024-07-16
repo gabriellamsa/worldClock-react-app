@@ -1,7 +1,13 @@
 # React + Vite || World Clock App
 
-### In progress...
+## In progress...
 
+### Updates:
+The application is being developed using the following packages: 
+react-dom react-simple-maps world-atlas 
+
+
+-------------------------
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

@@ -4,7 +4,6 @@ import ReactTooltip from 'react-tooltip';
 import './Map.css';
 
 const geoUrl = "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
-
 const Map = () => {
   const [geoData, setGeoData] = useState(null);
   const [tooltipContent, setTooltipContent] = useState("");

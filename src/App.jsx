@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Map from './components/Map';
 import Clock from './components/Clock';
 import TimezoneSelect from './components/TimezoneSelect';
@@ -7,6 +7,11 @@ import './App.css';
 
 function App() {
   const [timezone, setTimezone] = useState('UTC');
+
+  useEffect(() => {
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimezone(userTimezone);
+  }, []);
 
   return (
    <div className="app">
@@ -24,4 +29,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
